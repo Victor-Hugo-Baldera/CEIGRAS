@@ -30,14 +30,18 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div class="container header-content">
-      <img
-        src="https://plantbreeding.untrm.edu.pe/wp-content/uploads/2025/05/Logo_PGMG.png"
-        alt="Logo CEIGRAS"
-        class="logo"
-      >
+  <div class="container header-content">
+    <img
+      src="https://plantbreeding.untrm.edu.pe/wp-content/uploads/2025/05/Logo_PGMG.png"
+      alt="Logo CEIGRAS"
+      class="logo"
+    >
 
-      <nav class="navbar">
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="navbar" id="navbar">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="quienes-somos.html">Quienes Somos</a></li>
@@ -228,6 +232,15 @@
       </div>
     </div>
   </footer>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const navbar = document.getElementById("navbar");
 
+  if (toggle && navbar) {
+    toggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  }
+</script>
 </body>
 </html>

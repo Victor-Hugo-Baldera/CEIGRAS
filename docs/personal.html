@@ -45,7 +45,12 @@
         class="logo"
       >
 
-      <nav class="navbar">
+ <!-- BOTÓN MENÚ HAMBURGUESA -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="navbar" id="navbar">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="quienes-somos.html">Quienes Somos</a></li>
@@ -288,32 +293,12 @@
       </div>
     </div>
   </footer>
+ <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
 
-  <script>
-    function openModal(nombre, img, texto) {
-      document.getElementById("modal").style.display = "flex";
-      document.getElementById("modal-title").innerText = nombre;
-      document.getElementById("modal-img").src = img;
-      document.getElementById("modal-img").alt = nombre;
-      document.getElementById("modal-text").innerText = texto;
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeModal() {
-      document.getElementById("modal").style.display = "none";
-      document.body.style.overflow = "auto";
-    }
-
-    function closeModalOutside(event) {
-      if (event.target.id === "modal") {
-        closeModal();
-      }
-    }
-
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") {
-        closeModal();
-      }
+    toggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
     });
   </script>
 

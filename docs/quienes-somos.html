@@ -42,8 +42,11 @@
         alt="Logo UNTRM"
         class="logo"
       >
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
 
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="quienes-somos.html" class="active">Quienes Somos</a></li>
@@ -255,6 +258,15 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
+
+    toggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  </script>
 
 </body>
 </html>
