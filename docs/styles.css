@@ -735,7 +735,7 @@ body {
 ========================= */
 .team-section {
   background: #f3f3f3;
-  padding: 70px 0 80px;
+  padding: 10px 0 80px;
 }
 
 .team-section-alt {
@@ -922,7 +922,7 @@ body {
 ========================= */
 .events-section {
   background: #f3f3f3;
-  padding: 70px 0 80px;
+  padding: 10px 0 70px;
 }
 
 .events-grid {
@@ -1223,7 +1223,7 @@ body {
 }
 
 /* =========================
-   PUBLICACIONES TIPO REVISTA
+   PUBLICACIONES 
 ========================= */
 .journal-section {
   background: #f3f3f3;
@@ -1232,7 +1232,7 @@ body {
 
 .journal-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   align-items: start;
 }
@@ -1403,4 +1403,45 @@ body {
 .germ-content p {
   font-size: 0.95rem;
   color: #555;
+}
+
+.germ-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #113f8a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.germ-link:hover {
+  background: #0e3b73;
+  transform: translateX(3px);
+}
+
+
+.news-gallery {
+  margin-top: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
 }
