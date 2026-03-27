@@ -1666,3 +1666,25 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ICONOS REDES */
+.social-links a {
+  font-size: 26px;
+  margin: 0 8px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.social-links a:hover {
+  transform: scale(1.15);
+}
+
+/* GOOGLE SCHOLAR (azul) */
+.social-links a.google {
+  color: #4285F4;
+}
+
+/* GITHUB (negro original) */
+.social-links a.github {
+  color: #181717;
+}
