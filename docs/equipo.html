@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (text.includes("tesista")) return "Tesistas";
     if (text.includes("practicante")) return "Practicantes";
     if (text.includes("administradora")) return "Administración";
+    if (text.includes("pasante")) return "Pasantes";
 
     return "";
   }
@@ -174,7 +175,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "Investigadores": [],
         "Tesistas": [],
         "Practicantes": [],
-        "Administración": []
+        "Administración": [],
+        "Pasantes": []
       };
 
       people.forEach(person => {
@@ -189,6 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
       html += buildSection("Tesistas", grupos["Tesistas"]);
       html += buildSection("Practicantes", grupos["Practicantes"]);
       html += buildSection("Administración", grupos["Administración"]);
+      html += buildSection("Pasantes", grupos["Pasantes"]);
 
       container.innerHTML = html || "<p>No hay equipo para mostrar.</p>";
     } catch (error) {
